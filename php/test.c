@@ -7,6 +7,6 @@ int main( int argc,char *argv[]){
         for (int j=0 ; j<i;j++){
             printf("*");
         }
-    printf("\n");
+    printf("\n ");
     }
 }
