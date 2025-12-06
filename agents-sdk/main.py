@@ -51,7 +51,7 @@ async def async_interaction():
 
 # Run the agent with an asynchronous streaming interaction
 async def async_streaming_interaction():
-    response = Runner.run_streamed(agent, "Calculate the result of (15 + 5) * (10 - 2) / 4")
+    response = Runner.run_streamed(agent, "Calculate the result of (15 + 5) * (10 - 2) / 5")
     async for event in response.stream_events():
         if event.type == "raw_response_event":
             if(isinstance(event.data, ResponseTextDeltaEvent)):
