@@ -8,4 +8,11 @@ for ($i=0; $i<count($name) ; $i++){
 echo "<pre>";
 system("./test 10");
 echo "</pre>";
+
 ?>
+
+<pre>
+    <?php
+    print_r($_SERVER);
+    ?>
+</pre>
